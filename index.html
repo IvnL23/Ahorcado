@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahorcado</title>
+    <link rel="icon" href="./img/icon.png" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <main>
+      <!-- Bienvenida al juego -->
+      <section class="pagina-principal">
+        <div class="container-img-horca">
+          <img src="./img/icon.png" alt="Horca" class="img-horca" />
+        </div>
+        <div class="titulo-juego">
+          <h1 class="texto-home" id="txt-home">Juego del Ahorcado</h1>
+        </div>
+
+        <div class="container-btnsGame">
+          <button
+            type="button"
+            class="btns"
+            id="btn-iniciar"
+            onclick="window.location.href='./Ahorcado.html'"
+          >
+            Iniciar Juego
+          </button>
+          <button type="button" class="btns" id="btn-agregar" onclick="">
+            Agregar nueva palabra
+          </button>
+        </div>
+      </section>
+
+    </main>
+    <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
+
+<!-- <div class="backTo" title="Regresar a inicio">
+        <a href="./index.html"><i class="fa-solid fa-circle-arrow-left"></i></a>
+      </div> -->
+
+<!-- 
+        window.location.href='./addWord.html' -->

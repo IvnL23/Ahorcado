@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agregar palabra</title>
+    <link rel="icon" href="./img/icon.png" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="addWordContainer">
+      <div class="nameOfVictim">
+        <div class="backTo" title="Regresar a inicio">
+          <a href="./index.html"
+            ><i class="fa-solid fa-circle-arrow-left"></i
+          ></a>
+        </div>
+        <h5 class="titleNameVictim">Ingrese la nueva palabra:</h5>
+
+        <input
+          type="text"
+          maxlength="10"
+          name="nombre"
+          id="input-victim"
+          placeholder="Ej: Computador"
+          autofocus
+          autocomplete="disable"
+          class="input-victim"
+          onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"
+        />
+        <div class="container-btnsGameaddWord">
+          <button
+            type="button"
+            class="btns"
+            id="btn-iniciar"
+            onclick="window.location.href='./Ahorcado.html'"
+          >
+            Guardar y empezar
+          </button>
+        </div>
+
+        <div class="warning">
+          <span><lord-icon
+            src="https://cdn.lordicon.com/otyynlki.json"
+            trigger="loop"
+            style="width:24px;height:24px">
+        </lord-icon>	
+        &#160;Máximo 10 carácteres.</span>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+  </body>
+</html>
