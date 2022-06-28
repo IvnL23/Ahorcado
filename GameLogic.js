@@ -13,7 +13,6 @@ var words = [
   "JAVASCRIPT",
   "AUTOMOVIL",
   "COHETE",
-  "COMPUTADORA",
   "CASA",
   "PAIS",
   "CIUDAD",

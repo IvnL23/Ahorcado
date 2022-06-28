@@ -54,7 +54,7 @@ body {
   width: 180px;
 }
 
-.container-btnsGame{
+.container-btnsGame {
   position: absolute;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -73,24 +73,24 @@ body {
 ---------------------------------------------------------------------------------------
                                  CSS Botones.
 --------------------------------------------------------------------------------------- */
-.btns{
+.btns {
   width: 80%;
   height: 80%;
   margin: auto;
-  font-family: 'Paytone One';
+  font-family: "Paytone One";
   font-size: 18px;
   color: #ffffff;
   background-color: #4fadc0;
   border: 3px solid #193948;
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: #094C66 4px 4px 0px;
+  box-shadow: #094c66 4px 4px 0px;
   transition: transform 200ms, box-shadow 200ms;
 }
 
-.btns:active{
+.btns:active {
   transform: translate(4px) translate(4px);
-  box-shadow: #094C66 0px 0px 0px;
+  box-shadow: #094c66 0px 0px 0px;
 }
 
 /*
@@ -98,8 +98,24 @@ body {
                                  CSS Pagina juego.
 --------------------------------------------------------------------------------------- */
 .game {
+  width: 80%;
   height: 100vh;
+  margin: auto;
 }
+
+/* .gameg{
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  visibility: hidden;
+  pointer-events: none;
+  
+}
+
+.gameg.activo {
+  visibility: visible;
+} */
+
 .plotter {
   background-color: #f1f5fe;
   width: 940px;
@@ -111,7 +127,7 @@ body {
   z-index: 99;
 }
 
-.container-btnsFinalGame{
+.container-btnsFinalGame {
   position: absolute;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -127,7 +143,7 @@ body {
   visibility: hidden;
 }
 
-.container-btnsFinalGame.activo{
+.container-btnsFinalGame.activo {
   visibility: visible;
 }
 
@@ -143,24 +159,34 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.1);
   visibility: hidden;
- } 
+}
 
- .overlay.activo{
+.overlay.activo {
   visibility: visible;
- }
+}
 
 /*
 ---------------------------------------------------------------------------------------
                                Agregar palabra CSS.
 --------------------------------------------------------------------------------------- */
-.addWordContainer{
+.addWordContainer {
   width: 100%;
   height: 100vh;
   display: flex;
   margin: auto;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  visibility: visible;
+  top: 0;
+  left: 0;
+  right: 0;
 }
+
+.addWordContainer.disable {
+  visibility: hidden;
+}
+
 .nameOfVictim {
   width: 70%;
   height: 70%;
@@ -190,7 +216,6 @@ body {
   100% {
     transform: (1);
   }
-  
 }
 
 .titleNameVictim {
@@ -200,7 +225,7 @@ body {
   text-align: center;
   font-size: 64px;
   color: #e76268;
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .input-victim {
@@ -217,18 +242,17 @@ body {
   border-radius: 20px;
 }
 
-.container-btnsGameaddWord{
+.container-btnsGameaddWord {
   position: absolute;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   height: 8vh;
-  width: 40%;
-  bottom: 10%; 
+  width: 50%;
+  bottom: 10%;
   margin: auto;
-
 }
 
-.backTo{
+.backTo {
   z-index: 100;
   position: absolute;
   left: 0;
@@ -237,35 +261,34 @@ body {
   margin-left: 20px;
 }
 
-.fa-circle-arrow-left{
-  color:#293356;
-  transition: .4s ease-in;
+.fa-circle-arrow-left {
+  color: #293356;
+  transition: 0.4s ease-in;
   font-size: 30px;
 }
 
-.fa-circle-arrow-left:hover{
+.fa-circle-arrow-left:hover {
   font-size: 31px;
 }
 
-.warning{
+.warning {
   position: absolute;
   left: 4%;
   top: 95%;
   font-size: 16px;
-  font-family: 'Paytone One';
+  font-family: "Paytone One";
   letter-spacing: 2px;
   padding-bottom: 5px;
 }
 
-
-@media(max-width: 1500px){
-  .btns{
+@media (max-width: 1500px) {
+  .btns {
     font-size: 14px;
   }
 }
 
-@media(max-width: 800px){
-  .btns{
+@media (max-width: 800px) {
+  .btns {
     font-size: 10px;
   }
 }

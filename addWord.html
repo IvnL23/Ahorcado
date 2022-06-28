@@ -39,26 +39,35 @@
           onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"
         />
         <div class="container-btnsGameaddWord">
-          <button
-            type="button"
-            class="btns"
-            id="btn-iniciar"
-            onclick="window.location.href='./Ahorcado.html'"
-          >
-            Guardar y empezar
-          </button>
-        </div>
+            <button
+              type="button"
+              class="btns"
+              id="btn-iniciar"
+              onclick="addWord()"
+            >
+              Guardar y empezar
+            </button>
+
+            <button
+              type="button"
+              class="btns"
+              id="btn-cancelar"
+              onclick="window.location.href='./Ahorcado.html'"
+            >
+              Cancelar
+            </button>
 
         <div class="warning">
           <span><lord-icon
             src="https://cdn.lordicon.com/otyynlki.json"
             trigger="loop"
-            style="width:24px;height:24px">
+            style="width:26px;height:26px">
         </lord-icon>	
         &#160;Máximo 10 carácteres.</span>
         </div>
       </div>
     </div>
     <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+    <script src="./addWord.js"></script>
   </body>
 </html>
